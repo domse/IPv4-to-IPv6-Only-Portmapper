@@ -76,7 +76,7 @@ mit folgendem Inhalt.
 
 ```
 [program:socat]
-command= /home/dein.uberspace.account/bin/socat tcp4-listen:65324 tcp6-connect:zuhause.org:22
+command= /home/dein.uberspace.account/bin/socat tcp4-listen:65324,fork tcp6-connect:zuhause.org:22
 autostart=yes
 autorestart=yes
 ```
